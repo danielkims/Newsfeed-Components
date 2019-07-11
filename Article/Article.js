@@ -114,7 +114,6 @@ const data = [
 */
 const articles = document.querySelector(".articles");
 data.forEach(data => {
-  console.log("creating article", data.title);
   articles.appendChild(newArticle(data));
 });
 
@@ -151,7 +150,6 @@ function newArticle(data) {
  
 
   itemButton.addEventListener("click", event => {
-    console.log("button clicked", event.target);
     article.classList.toggle("article-open");
   });
 
